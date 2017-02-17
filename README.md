@@ -50,3 +50,4 @@ Developing this website as original theme with start from scratch.
 * Gzip
 * Use loading icon.
 * Optimize SEO
+* Hand code using part of Prallax.js and eliminate the js library.
