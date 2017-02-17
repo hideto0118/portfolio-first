@@ -1,6 +1,6 @@
 # Hideto's Portfolio
 This is my poersonal portfolio showing front-end and other skills.  
-Actual Website: http://hidetoyasunori.com 
+Actual Website: http://hidetoyasunori.com  
 
 ## Skills I Used
 * HTML
@@ -14,22 +14,24 @@ Actual Website: http://hidetoyasunori.com
 * Gulp
 
 ## Design
-### 1. Web Design
+### Web Design
 **Logo** - Lorem Ipsum.  
 **Color** - Lorem Ipsum.  
 
-### 2. Animations
+### Animations
 **CSS Animations** - Lorem Ipsum.   
 **SVG Animations** - Lorem Ipsum.   
 Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
 
 
 ## Development
-**JavaScript** - GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases. I can avoid browser bugs.  
+### JavaScript
+GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases. I can avoid browser bugs.  
 
-**Wordpress** - Developing this website as original theme with start from scratch.
+### Wordpress
+Developing this website as original theme with start from scratch.
 
-**CSS Architecture**
+### CSS Architecture
 * BEM (http://getbem.com/naming)
 * SMACSS (https://smacss.com)
 
@@ -40,10 +42,8 @@ Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
 * SVG Sprite - Loaded SVG Icons only once.
 * Server Location - Choosed one located on LA which is phisically target users living in Vancuver.
 
-## SEO
-Lorem Ipsum
-
-## The More to Improve
+## The More to Do
 * Optimize above the fold rendering time with inline CSS and Javascript.
 * Gzip
 * Use loading icon.
+* Optimize SEO
