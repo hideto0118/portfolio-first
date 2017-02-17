@@ -1,4 +1,4 @@
-(function() {
+(function(){
   // floating charactor
   var scene = document.getElementById('scene');
   var parallaxCharactor = new Parallax(scene);
@@ -17,7 +17,7 @@
   });
 
   //using request animation
-  var scroll = function () {
+  var scroll = function (){
 
     windowYOffset = window.pageYOffset;
     elBackgrounPos = "translateY(" + (windowYOffset * speed) + "px)";
