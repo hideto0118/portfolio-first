@@ -1,0 +1,104 @@
+@font-face {
+  font-family: AmericanCaptain;
+  src: url('AmericanCaptain.woff2') format('woff2'),
+       url('AmericanCaptain.woff') format('woff'),
+       url('AmericanCaptain.otf') format('opentype');
+  font-weight: bold;
+}
+
+ $marvel-color: #ed1a29;
+
+
+.marvel {
+  .main--customized {
+    border-bottom: 1px solid $marvel-color;
+  }
+
+  .customized__jumbotron {
+    background: #000;
+    height: 100vh;
+  }
+
+  .customized__jumbotron__link {
+    display: block;
+  }
+
+  .customized__jumbotron__logoImg{
+    margin: 0 auto 50px;
+    display: block;
+    height: auto;
+    width: 45%;
+    min-width: 280px;
+    padding: 50px 0 0;
+  }
+
+  .customized__jumbotron__topImg{
+    margin: 0 auto;
+    display: block;
+    height: 60%;
+    width: auto;
+  }
+
+  .navbar__btn__icon--customized {
+    background: $marvel-color;
+    &::before,
+    &::after {
+      background: $marvel-color;
+    }
+  }
+
+  .customized-color01 {
+    background: $marvel-color;
+  }
+
+  .customized-color02 {
+    background: #000;
+  }
+
+  .customized-color03 {
+    background: #96001d;
+  }
+
+  .customized-color04 {
+    background: #fff;
+    border: 1px solid #000;
+  }
+
+  .customized-typography01 {
+    font-family: 'AmericanCaptain', 'Ubuntu', 'sans-serif';
+  }
+
+  .american-captain__title {
+    margin-top: 1.15em;
+  }
+
+  .customized-typography02 {
+    font-family: 'Merriweather', serif;
+  }
+
+  .customized-bg {
+    background: $marvel-color;
+  }
+
+  .customized-bd {
+    border: 1px solid $marvel-color;
+  }
+
+  .customized-after-bg{
+    &::after {
+      background: $marvel-color;
+    }
+  }
+
+  .customized-hover-color {
+    &:hover {
+      color: $marvel-color;
+    }
+  }
+
+  .email__individual--customized {
+    &::after {
+      background: $marvel-color;
+    }
+  }
+}

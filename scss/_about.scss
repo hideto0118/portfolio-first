@@ -1,0 +1,150 @@
+.about {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__title {
+  width: 100%;
+}
+
+.hideto_svg {
+  width: 100vw;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#hideto_draw {
+  width: 50%;
+  path {
+  stroke: #000;
+/*  stroke-linecap: round;
+  stroke-linejoin: round;*/
+  }
+}
+
+#stroke {
+  stroke-width: 6;
+}
+
+#h_left {
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+}
+
+#h_middle {
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;
+}
+
+#h_right {
+  stroke-dasharray: 59;
+  stroke-dashoffset: 59;
+}
+
+#i_main {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+}
+
+#d {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+}
+
+#e {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+}
+
+#t_main {
+  stroke-dasharray: 53;
+  stroke-dashoffset: 53;
+}
+
+#o {
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+}
+
+#i_dot {
+  stroke-width: 7;
+  stroke-dasharray: 11;
+  stroke-dashoffset: 11;
+}
+
+#t_top {
+  stroke-dasharray: 14;
+  stroke-dashoffset: 14;
+}
+
+
+
+.about__pic {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about__pic__item {
+  display: inline-block;
+  width: 400px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.about__description {
+  text-align: left;
+  width: 50%;
+  opacity: 0;
+  visibility: hidden;
+  h3 {
+    margin-bottom: 0.2rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p {
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cross-text {
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 0.65rem;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: red;
+  }
+}
+
+.about__description__sns {
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.icon__sns {
+  height: 25px;
+  width: 25px;
+  transition: fill 0.3s ease;
+  &:hover {
+    fill: $sub-color;
+  }
+}
+
+
+

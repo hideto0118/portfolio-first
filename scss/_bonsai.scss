@@ -1,0 +1,79 @@
+$bonsai-color: #389f0f;
+
+.bonsai {
+  .main--customized {
+    border-bonsai: 1px solid $bonsai-color;
+  }
+
+  .customized__jumbotron {
+    height: 100vh;
+    width: 100%;
+    background: url("../img/bonsai/bonsai_master.jpg") center center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .customized__jumbotron__logoImg {
+    padding-top: 4vh;
+    height: auto;
+    width: 40%;
+  }
+
+  .navbar__btn__icon--customized {
+    background: $bonsai-color;
+    &:before,
+    &:after {
+      background: $bonsai-color;
+    }
+  }
+
+  .customized-color01 {
+    background: #fff;
+    border: 1px solid #000;
+  }
+
+  .customized-color02 {
+    background: #000;
+  }
+
+  .customized-color03 {
+    background: #808080;
+  }
+
+  /*.customized-color04 {
+    background: #fff;
+    border: 1px solid #000;
+  }*/
+
+
+  .customized-typography01 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .customized-typography02 {
+    font-family: 'Halant', serif;
+  }
+
+  .customized-bg {
+    background: $bonsai-color;
+  }
+  .customized-bd {
+    border: 1px solid $bonsai-color;
+  }
+
+  .customized-after-bg{
+    &::after {
+      background: $bonsai-color;
+    }
+  }
+
+  .customized-hover-color {
+    &:hover {
+      color: $bonsai-color;
+    }
+  }
+
+  .border {
+    border: 1px solid #ddd;
+  }
+}
