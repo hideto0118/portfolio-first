@@ -15,18 +15,20 @@ Actual Website: http://hidetoyasunori.com
 
 ## Design
 ### Web Design
-**Logo** - Lorem Ipsum.  
-**Color** - Lorem Ipsum.  
+**Logo** - Made by SVG with Adobe Illustrator.  
+**Color** - I use white as the main color for clean and simple impresion. The sub color is dark blue to show loyality and trust.
 
 ### Animations
-**CSS Animations** - Lorem Ipsum.   
-**SVG Animations** - Lorem Ipsum.   
+I only animate objects with only **opacity** and **transform** which smoothly work because of [less browser rendering timeline!](https://developers.google.com/web/fundamentals/performance/rendering/).
+**CSS Animations** - Used in some parts such as navigation pop up and jump hovers.   
+**SVG Animations** - "_Hideto_" animation in the middle of the portfoli is activated by JavaScript of GSAP and ScrollMagic.js.   
 Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
 
 
 ## Development
 ### JavaScript
-GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases. I can avoid browser bugs.  
+I didn't use jQuery because it impacts page loading time also it performs poor for animations.
+GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases. 
 
 ### Wordpress
 Developing this website as original theme with start from scratch.
@@ -44,6 +46,7 @@ Developing this website as original theme with start from scratch.
 
 ## The More to Do
 * Optimize above the fold rendering time with inline CSS and Javascript.
+* Disable jQuery on Wordpess.
 * Gzip
 * Use loading icon.
 * Optimize SEO
