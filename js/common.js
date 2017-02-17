@@ -93,6 +93,14 @@
   scroll();
 }
 
+//Arrow to scroll down
+var arrowScroll = document.querySelector(".js-arrow-scroll");
+if(arrowScroll){
+  arrowScroll.addEventListener("click", function(){
+     scrollIt(workDestination, 400, 'easeInQuad');
+  });
+}
+
 var helloDestination = document.querySelector("#hello");
 var helloJump = document.querySelector(".js-hello-jump");
 helloJump.addEventListener("click", function(){

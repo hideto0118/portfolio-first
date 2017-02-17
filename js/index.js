@@ -10,12 +10,6 @@
   var windowYOffset;
   var elBackgrounPos;
 
-  //Arrow to scroll down
-  var arrowScroll = document.querySelector(".js-arrow-scroll");
-  arrowScroll.addEventListener("click", function(){
-     scrollIt(workDestination, 400, 'easeInQuad');
-  });
-
   //using request animation
   var scroll = function (){
 

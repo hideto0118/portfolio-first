@@ -19,7 +19,7 @@ Actual Website: http://hidetoyasunori.com
 **Color** - I use white as the main color for clean and simple impresion. The sub color is dark blue to show loyality and trust.
 
 ### Animations
-I only animate objects with only **opacity** and **transform** which smoothly work because of [less browser rendering timeline!](https://developers.google.com/web/fundamentals/performance/rendering/).
+I animate objects with only **opacity** and **transform** which smoothly work because of less browser rendering timeline.[Detail](https://developers.google.com/web/fundamentals/performance/rendering/)  
 **CSS Animations** - Used in some parts such as navigation pop up and jump hovers.   
 **SVG Animations** - "_Hideto_" animation in the middle of the portfoli is activated by JavaScript of GSAP and ScrollMagic.js.   
 Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
