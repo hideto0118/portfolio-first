@@ -31,7 +31,7 @@
             </div>
             <div class="navbar__btn js-navbar__btn js-menu-hide">
               <span class="navbar__btn__icon navbar__btn__icon--customized"></span>
-              <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'menu__outer', 'menu_class' => 'menu js-menu displayNone' ) ); ?>
+              <?php wp_nav_menu( array( 'theme_location' => 'individual-menu', 'container_class' => 'menu__outer', 'menu_class' => 'menu js-menu displayNone' ) ); ?>
             </div>
           </nav>
     </header>
