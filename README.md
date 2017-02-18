@@ -1,5 +1,5 @@
 # Hideto's Portfolio
-This is my poersonal portfolio showing front-end and other skills.  
+This is my poersonal portfolio showing front-end development and other skills.  
 Actual Website: http://hidetoyasunori.com  
 
 ## Skills I Used
@@ -27,25 +27,25 @@ Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
 
 ## Development
 ### JavaScript
-I didn't use jQuery because it impacts page loading time also it performs poor for animations.
-GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases. 
+I didn't use jQuery because extra JavaScript file request impacts page loading time also it performs poor for animations.
+GSAP is literally up to 20x faster than jQuery. It's even faster than CSS3 animations and transitions in many cases.  
 
 ### Wordpress
-Developing this website as original theme with start from scratch.
+Developing this website as an original theme with starting from scratch.  I used Custom Fields for the work detail pages and it makes easy to add and edit the page form the admin page.
 
 ### CSS Architecture
 * BEM (http://getbem.com/naming)
 * SMACSS (https://smacss.com)
 
-## Performance
+## Performance Optimaization
 * Images - Compressed and responsive image size with srcset.
 * CSS - Combined to one file and minified.
 * Fonts - Used several formats(WOFF2, WOFF and OTF) and optimized to modern browsers.
-* SVG Sprite - Loaded SVG Icons only once.
-* Server Location - Choosed one located on LA which is phisically target users living in Vancuver.
+* SVG Sprite - Loading multiple SVG Icons with only onne request.
+* Server Location - Located in LA which is phisically close to my target users living in Vancuver, BC Canada.
 
 ## The More to Do
-* Optimize above the fold rendering time with inline CSS and Javascript.
+* Optimize above-the-fold rendering time with inline CSS and Javascript.
 * Disable jQuery on Wordpess.
 * Gzip
 * Use loading icon.
