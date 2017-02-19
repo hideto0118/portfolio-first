@@ -87,8 +87,8 @@
       <div class="logos individual__description__subsection">
         <h2 class="description__title customized-after-bg">Logos</h2>
         <ul class="logos__list logos__list--customized">
-          <li><?php the_image($logo01, 'medium', 'logos__img--main'); ?><!-- <img class="logos__img--main" src="<?php echo $logo01_url; ?>" alt="customized_heroes_logo"> --><h3>Main Logo</h3></li>
-          <li><?php the_image($logo02, 'medium', 'logos__img--favicon'); ?><!-- <img class="logos__img--favicon" src="<?php echo $logo02_url; ?>" alt="customized_logo"> --><h3>Favicon</h3></li>
+          <li><?php the_image($logo01, 'medium', 'logos__img--main'); ?><h3>Main Logo</h3></li>
+          <li><?php the_image($logo02, 'medium', 'logos__img--favicon'); ?><h3>Favicon</h3></li>
         </ul>
       </div>
       <div class="typography individual__description__subsection">
