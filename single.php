@@ -102,11 +102,11 @@
     </section>
 
     <section class="morework">
-      <h2 class="description__title customized-after-bg">More Work</h2>
+      <h2 class="description__title customized-after-bg">More Works</h2>
       <ul class="morework__list">
-        <li class="morework__list--item"><a href="customizedheroes.html">customized Heroes</a></li>
-        <li class="morework__list--item"><a href="bonsai.html">Dream of Bosai</a></li>
-        <li class="morework__list--item"><a href="">Sunny Side Hotel</a></li>
+        <li class="morework__list--item"><a href="<?php echo get_home_url(); ?>/portfolio/marvel-heroes">Marvel Heroes</a></li>
+        <li class="morework__list--item"><a href="<?php echo get_home_url(); ?>/portfolio/dream-of-bonsai">Dream of Bosai</a></li>
+        <li class="morework__list--item"><a href="http://protein-or-die.sakura.ne.jp/fav-movie-poster/">Movie Poster</a></li>
       </ul>
     </section>
 
