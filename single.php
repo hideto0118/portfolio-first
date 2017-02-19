@@ -53,14 +53,14 @@
         <p><?php echo get_field('overview'); ?></p>
         <?php echo get_field('skills'); ?>
       </div>
-      <div>
+     <!--  <div>
         <h2 class="description__title customized-after-bg">Design</h2>
         <p><?php echo get_field('design'); ?></p>
       </div>
       <div>
         <h2 class="description__title customized-after-bg">Development</h2>
         <p><?php echo get_field('development'); ?></p>
-      </div>
+      </div> -->
     </section>
 
     <section class="mockups">
