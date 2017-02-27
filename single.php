@@ -104,9 +104,9 @@
     <section class="morework">
       <h2 class="description__title customized-after-bg">More Works</h2>
       <ul class="morework__list">
-        <li class="morework__list--item"><a href="<?php echo get_home_url(); ?>/portfolio/marvel-heroes">Marvel Heroes</a></li>
-        <li class="morework__list--item"><a href="<?php echo get_home_url(); ?>/portfolio/dream-of-bonsai">Dream of Bosai</a></li>
-        <li class="morework__list--item"><a href="http://protein-or-die.sakura.ne.jp/fav-movie-poster/">Movie Poster</a></li>
+        <li class="morework__list__item morework__list__item--01"><a href="<?php echo get_home_url(); ?>/portfolio/marvel-heroes"><span>Marvel Heroes</span></a></li>
+        <li class="morework__list__item morework__list__item--02"><a href="<?php echo get_home_url(); ?>/portfolio/dream-of-bonsai"><span>Dream of Bosai</span></a></li>
+        <li class="morework__list__item morework__list__item--03"><a href="http://protein-or-die.sakura.ne.jp/fav-movie-poster/" target="_blank"><span>Movie Poster</span></a></li>
       </ul>
     </section>
 

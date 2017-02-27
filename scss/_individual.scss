@@ -286,12 +286,24 @@
   justify-content: space-between;
 }
 
-.morework__list--item {
+.morework__list__item--01{
+  background: url("../img/marvel_heroes03.jpg") center center;
+}
+
+.morework__list__item--02{
+  background: url("../img/bonsai/bonsai_thumbnail.jpg") center center;
+}
+
+.morework__list__item--03{
   background: url("../img/movieposter.jpg") center center;
+}
+
+.morework__list__item {
   background-size: cover;
   height: 100px;
   width: 30%;
   border: 1px solid #000;
+  position: relative;
   &:first-child {
 /*    margin: 0 20px 0 0;*/
   }
@@ -299,10 +311,26 @@
 /*    margin: 0 0 0 20px;*/
   };
   a {
-    color: #000;
     display: block;
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0;
+    }
+    span {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
   }
 }
 

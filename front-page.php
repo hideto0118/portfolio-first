@@ -92,12 +92,12 @@
   <main>
     <div class="main__inner">
       <section id="work" class="work">
-        <h2 class="section-title">Work</h2>
+        <h2 class="section-title">Works</h2>
         <div class="gallery">
 
         <?php
           $args = array(
-            'post_type' => 'portfolio',
+            'post_type' => 'works',
             'orderby' => 'ID',
             'order'   => 'ASC'
           );
@@ -142,22 +142,23 @@
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">Sunnyside Resort</h3>
-                  <p>Description is going to be shown here.</p>
+                  <h3 class="gallery__item__title">React App</h3>
+                  <p>Coming Soon</p>
                 </div>
               </div>
             </div>
-            <div id="gallery__item04" class="gallery__item item04">
-               <img src="<?php echo get_template_directory_uri(); ?>/img/ecommerce.jpg" class="gallery__img">
+
+            <a id="gallery__item04" class="gallery__item item04" href="http://webdev-bodymake.com/" target="_blank">
+               <img src="<?php echo get_template_directory_uri(); ?>/img/vancouver.jpg" class="gallery__img">
               <div class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">E-Commerce</h3>
-                  <p>Description is going to be shown here.</p>
+                  <h3 class="gallery__item__title">Personal Blog</h3>
+                  <p>Web Design, Web Development, Wordpress, SVG Animation, Instagram API</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="gallery__row">
@@ -182,8 +183,8 @@
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">Comming Soon</h3>
-                  <p>Description is going to be shown here.</p>
+                  <h3 class="gallery__item__title">Ruby on Rails App</h3>
+                  <p>Coming Soon</p>
                 </div>
               </div>
             </div> <!-- item06 -->
