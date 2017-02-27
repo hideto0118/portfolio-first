@@ -289,72 +289,72 @@ var sceneGalleryItem06 = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-    // build tween for About
-    var aboutPic = document.getElementById("about__pic__item");
-    var aboutDisc = document.getElementById("about__description");
-    var tweenAbout = new TimelineMax();
-      tweenAbout.to(
-                  aboutPic,
-                  0.8,
-                  {opacity: 1, visibility: 'visible', ease: Power1.easeOut})
-                .to(
-                  aboutDisc,
-                  0.8,
-                  {opacity: 1, visibility: 'visible', ease: Power1.easeOut},
-                  '-=0.5');
+// build tween for About
+var aboutPic = document.getElementById("about__pic__item");
+var aboutDisc = document.getElementById("about__description");
+var tweenAbout = new TimelineMax();
+  tweenAbout.to(
+              aboutPic,
+              0.8,
+              {opacity: 1, visibility: 'visible', ease: Power1.easeOut})
+            .to(
+              aboutDisc,
+              0.8,
+              {opacity: 1, visibility: 'visible', ease: Power1.easeOut},
+              '-=0.5');
 
-      var sceneAbout = new ScrollMagic.Scene({
-        triggerElement: "#about__pic__item",
-        offset: -100,
-        reverse:false
-      })
-      .setTween(tweenAbout)  // trigger a TweenMax.to tween
-      // .addIndicators({name: "About (duration: 0)"}
-      .addTo(controller);
+var sceneAbout = new ScrollMagic.Scene({
+  triggerElement: "#about__pic__item",
+  offset: -100,
+  reverse:false
+  })
+  .setTween(tweenAbout)  // trigger a TweenMax.to tween
+  // .addIndicators({name: "About (duration: 0)"}
+  .addTo(controller);
 
-    // build tween for skill
-    var skill01 = document.getElementById("skill01");
-    var skill02 = document.getElementById("skill02");
-    var skill03 = document.getElementById("skill03");
-    var skill04 = document.getElementById("skill04");
-    var tweenAbout = new TimelineMax();
-      tweenAbout.from(
-                  skill01,
-                  0.5,
-                  {opacity: 0, y: 50, ease: Power1.easeOut})
-                . from(
-                  skill02,
-                  0.5,
-                  {opacity: 0, y: 50, ease: Power1.easeOut},
-                  '-=0.3')
-                . from(
-                  skill03,
-                  0.5,
-                  {opacity: 0, y: 50, ease: Power1.easeOut},
-                  '-=0.3')
-                . from(
-                  skill04,
-                  0.5,
-                  {opacity: 0, y: 50, ease: Power1.easeOut},
-                  '-=0.3');
+// build tween for skill
+var skill01 = document.getElementById("skill01");
+var skill02 = document.getElementById("skill02");
+var skill03 = document.getElementById("skill03");
+var skill04 = document.getElementById("skill04");
+var tweenAbout = new TimelineMax();
+  tweenAbout.from(
+              skill01,
+              0.5,
+              {opacity: 0, y: 50, ease: Power1.easeOut})
+            . from(
+              skill02,
+              0.5,
+              {opacity: 0, y: 50, ease: Power1.easeOut},
+              '-=0.3')
+            . from(
+              skill03,
+              0.5,
+              {opacity: 0, y: 50, ease: Power1.easeOut},
+              '-=0.3')
+            . from(
+              skill04,
+              0.5,
+              {opacity: 0, y: 50, ease: Power1.easeOut},
+              '-=0.3');
 
-    var sceneSkill = new ScrollMagic.Scene({
-      triggerElement: "#skill02",
-      offset: -100,
-      reverse:false
-    })
-    .setTween(tweenAbout)  // trigger a TweenMax.to tween
-    // .addIndicators({name: "Skill (duration: 0)"}
-    .addTo(controller);
+var sceneSkill = new ScrollMagic.Scene({
+  triggerElement: "#skill02",
+  offset: -100,
+  reverse:false
+})
+.setTween(tweenAbout)  // trigger a TweenMax.to tween
+// .addIndicators({name: "Skill (duration: 0)"}
+.addTo(controller);
 
-    //fadein email
-    var sceneEmail = new ScrollMagic.Scene({
-        triggerElement: "#footer",
-        offset: 68,
-        triggerHook: 1
-      })
-      .setClassToggle("#email", "email-shadow")
-      // .addIndicators({name: "email (duration: 0)"})
-      .addTo(controller);
+//fadein email
+var sceneEmail = new ScrollMagic.Scene({
+    triggerElement: "#footer",
+    offset: 68,
+    triggerHook: 1
+})
+.setClassToggle("#email", "email-shadow")
+// .addIndicators({name: "email (duration: 0)"})
+.addTo(controller);
 
 }());
