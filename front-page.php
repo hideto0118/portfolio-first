@@ -277,11 +277,11 @@
           </div>
 
           <div id="skill02" class="skill_range_inner">
-            <h4>CMS/Back End</h4>
+            <h4>CMS/Framework</h4>
             <ul>
               <li>Wordpress<span class="seventyFive"></span></li>
-              <li>Woocommerce<span class="seventyFive"></span></li>
-              <li>PHP<span class="fifty"></span></li>
+              <li>Ruby on Rails<span class="fifty"></span></li>
+              <li>React, Redux<span class="fifty"></span></li>
             </ul>
           </div>
 
