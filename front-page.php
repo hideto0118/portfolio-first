@@ -297,7 +297,7 @@
           <div id="skill04" class="skill_range_inner otherSkills">
             <h4>Other Skills</h4>
             <ul>
-              <li>Gulp</li>
+              <li>Gulp, Webpack</li>
               <li>Responsive Design</li>
               <li>BEM, SMACSS, OOCSS</li>
               <li>GSAP</li>
