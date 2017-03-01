@@ -272,7 +272,7 @@
             <ul>
               <li>HTML<span class="hundred"></span></li>
               <li>CSS, Sass<span class="seventyFive"></span></li>
-              <li>JavaScript, jQuery<span class="seventyFive"></span></li>
+              <li>JavaScript, ES6<span class="seventyFive"></span></li>
             </ul>
           </div>
 
@@ -303,7 +303,7 @@
               <li>GSAP</li>
               <li>SVG Animation</li>
               <li>Cross Browser</li>
-              <li>SEO</li>
+              <li>jQuery</li>
             </ul>
           </div>
         </div>
