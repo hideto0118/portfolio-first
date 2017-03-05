@@ -256,7 +256,7 @@
           <p>I'm pretty happy as long as I code everyday and workout 3 times a week. I also love grabbing <span class="cross-text">beer</span> kale protein smoothies, hiking, and playing rugby. I've tackled any coding bugs and beaten them all up! Let me know any troubles of web stuff. I will knock them down ASAP!</p>
           <ul class="about__description__sns">
             <li><a href="https://github.com/hideto0118" target="_blank"><svg class="icon__sns icon__sns--github"><use xlink:href="#logo-github"></use></svg></a></li>
-            <li><a href="https://www.linkedin.com/in/hideto-yasunori" target="_blank"><svg class="icon__sns icon__sns--linkedin"><use xlink:href="#logo-linkedin"></use></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/hidetoyasunori" target="_blank"><svg class="icon__sns icon__sns--linkedin"><use xlink:href="#logo-linkedin"></use></svg></a></li>
             <li><a href="https://codepen.io/Hideto/" target="_blank"><svg class="icon__sns icon__sns--codepen"><use xlink:href="#logo-codepen"></use></svg></a></li>
             <li><a href="https://www.facebook.com/hideto.yasunori" target="_blank"><svg class="icon__sns icon__sns--facebook"><use xlink:href="#logo-facebook"></use></svg></a></li>
           </ul>
