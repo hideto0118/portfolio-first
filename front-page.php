@@ -29,63 +29,64 @@
 <!-- end of SVG Sprite -->
 <div class="wrapper">
     <header id="hello" class="jumbotron">
-      <div class="jumbotron__background__img js-parallax">
-      <div class="temporary"></div>
-        <div class="jumbotron__background__gradient">
-          <nav class="navbar">
-            <div class="navbar__logo">
-              <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_darkblue.svg"></a>
-            </div>
-            <div class="navbar__btn js-navbar__btn js-menu-hide">
-              <span class="navbar__btn__icon"></span>
-              <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'menu__outer', 'menu_class' => 'menu js-menu displayNone' ) ); ?>
-            </div><!-- navbar__btn -->
-          </nav>
-            <div class="jumbotron__float">
-              <div id="scene">
-                <div class="layer" data-depth="0.3">
-                  <svg id="Layer_1" class="fadeInUp" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316.6 264.19">
-                    <title>hideto_logo_mountain</title>
-                    <text transform="translate(46.53 248.09)" font-size="33" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.31" font-family="SnellRoundhand-Bold, Snell Roundhand" font-weight="700">Vancouve<tspan x="132.53" y="0" letter-spacing="-0.11em">r</tspan><tspan x="141.7" y="0" letter-spacing="0em">, BC</tspan></text>
-                    <text transform="translate(121.88 215.78)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700">D<tspan x="11.02" y="0" letter-spacing="-0.01em">ev</tspan><tspan x="28.46" y="0">e</tspan><tspan x="36.98" y="0" letter-spacing="-0.01em">l</tspan><tspan x="41.93" y="0">oper</tspan></text>
-                    <text transform="translate(121.06 132.89)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700"><tspan letter-spacing="-0.01em">F</tspan><tspan x="9.68" y="0" letter-spacing="-0.01em">r</tspan><tspan x="16.26" y="0">ont-E</tspan><tspan x="57.94" y="0" letter-spacing="0em">n</tspan><tspan x="68.02" y="0">d</tspan></text>
-                    <g id="line">
-                      <g id="line_tl">
-                        <rect x="159.15" y="261.56" width="96.21" height="4" transform="translate(-144.73 -135.14) rotate(-0.18)" fill="#fff"/>
-                      </g>
-                      <g id="line_tr">
-                        <rect x="399.27" y="217.11" width="4" height="94.77" transform="translate(-9.31 528.52) rotate(-89.69)" fill="#fff"/>
-                      </g>
-                      <g id="line_bl">
-                        <rect x="158.99" y="343.64" width="97.15" height="4" transform="translate(-144.79 -135.26) rotate(-0.15)" fill="#fff"/>
-                      </g>
-                      <g id="line_br">
-                        <rect x="351.7" y="343.33" width="97.74" height="4" transform="translate(-145 -134.5) rotate(-0.19)" fill="#fff"/>
-                      </g>
+      <div class="js-parallax parallax js-jumbotron__main-img--parent">
+      <!-- <div class="temporary"></div> -->
+      <img class="jumbotron__main-img js-jumbotron__main-img" src="<?php echo get_template_directory_uri(); ?>/img/road04.jpg" alt="jumbotoron main image">
+        <!-- <div class="jumbotron__background__gradient"> -->
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_darkblue.svg"></a>
+          </div>
+          <div class="navbar__btn js-navbar__btn js-menu-hide">
+            <span class="navbar__btn__icon"></span>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'menu__outer', 'menu_class' => 'menu js-menu displayNone' ) ); ?>
+          </div><!-- navbar__btn -->
+        </nav>
+          <div class="jumbotron__float">
+            <div id="scene">
+              <div class="layer" data-depth="0.3">
+                <svg id="Layer_1" class="fadeInUp" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316.6 264.19">
+                  <title>hideto_logo_mountain</title>
+                  <text transform="translate(46.53 248.09)" font-size="33" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.31" font-family="SnellRoundhand-Bold, Snell Roundhand" font-weight="700">Vancouve<tspan x="132.53" y="0" letter-spacing="-0.11em">r</tspan><tspan x="141.7" y="0" letter-spacing="0em">, BC</tspan></text>
+                  <text transform="translate(121.88 215.78)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700">D<tspan x="11.02" y="0" letter-spacing="-0.01em">ev</tspan><tspan x="28.46" y="0">e</tspan><tspan x="36.98" y="0" letter-spacing="-0.01em">l</tspan><tspan x="41.93" y="0">oper</tspan></text>
+                  <text transform="translate(121.06 132.89)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700"><tspan letter-spacing="-0.01em">F</tspan><tspan x="9.68" y="0" letter-spacing="-0.01em">r</tspan><tspan x="16.26" y="0">ont-E</tspan><tspan x="57.94" y="0" letter-spacing="0em">n</tspan><tspan x="68.02" y="0">d</tspan></text>
+                  <g id="line">
+                    <g id="line_tl">
+                      <rect x="159.15" y="261.56" width="96.21" height="4" transform="translate(-144.73 -135.14) rotate(-0.18)" fill="#fff"/>
                     </g>
-                    <g id="mountain">
-                      <g id="mtn_left">
-                        <polyline points="125.51 108.59 100.18 63.9 79.23 15.77 68.36 51.64 61.84 44.03 41.18 79.9 32.49 74.46 6.4 109.25 32.23 102.09 37.06 91.98 56.41 94.61 66.96 80.11 65.2 65.16 84.55 55.92 81.55 28.73" fill="#fff"/>
-                        <path d="M269.4,244.39l-7-10.79-6.93-10.84-6.87-10.87-3.43-5.44c-1.14-1.81-2.3-3.62-3.33-5.5l-.09-.16,0-.08c-1.67-4-3.44-8-5.18-12.06l-5.24-12-10.48-24.07,4.68-.27-10.87,35.87-1.32,4.36-3-3.46-6.52-7.61,4.06-.38-20.65,35.87-1.29,2.25-2.2-1.37-8.7-5.43,3.32-.62-26.09,34.78-2.67-3.91,25.83-7.16-1.59,1.33,4.84-10.11.79-1.64,1.81.25,19.34,2.64-2.36,1,10.55-14.51-.46,1.76-.88-7.47c-.28-2.49-.7-5-.9-7.47l-.15-1.91,1.56-.66,19.78-8.33-.85,1.53-.78-13.68-.71-13.69L227.73,178l2.21,13.52.16,1-1,.54-18.91,10.14,1.42-2.56c.4,2.48.56,5,.86,7.48l.88,7.47.11,1-.58.79-10.55,14.51-.88,1.21-1.48-.2-19.34-2.64,2.59-1.4L178.37,239l-.49,1-1.1.3L151,247.45l-7.07,2,4.4-5.87,26.09-34.78,1.38-1.84,1.95,1.22,8.7,5.43-3.49.87,20.65-35.87,1.76-3.06,2.3,2.68,6.52,7.61-4.29.9,10.87-35.87,2-6.51,2.71,6.23,10.48,24.07,5.24,12c1.75,4,3.47,8,5.3,12l-.12-.24c1.09,1.85,2,3.77,3,5.68l2.9,5.74,5.8,11.48,5.74,11.51Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
-                      </g>
-                      <g id="mtn_middle">
-                        <polyline points="219.5 107.28 188.52 51.62 170.27 36.14 162.15 8.52 153.48 12.31 146.98 7.43 132.78 32.67 120.54 50.76 104.65 68.86 119.53 82.82 128.62 59.7 147.62 63.83 145.97 38.22 159.18 19.23" fill="#fff"/>
-                        <path d="M363.38,243.07q-8.78-13.34-17.28-26.83l-4.26-6.74c-1.42-2.25-2.56-4.65-3.87-7l-7.74-13.92.57.69-18.25-15.48-.57-.48-.21-.72L303.64,145l3.4,1.58-8.67,3.79L297,151l-1.17-.87-6.5-4.87,3.68-.77-14.2,25.24-.05.09-.06.09L266.5,188l-.09.13-.1.12-15.88,18.11-.17-3.47,14.88,14-4,.91,9.09-23.13.78-2L273,193l19,4.13-3,2.6c-.12-2.14-.32-4.26-.47-6.4s-.08-4.28-.11-6.42l-.1-12.85v-.62l.28-.35,7.2-9.08,7.27-9-5.95,10-6,9.91.27-1,1.55,12.76c.24,2.13.56,4.25.71,6.38s.2,4.27.36,6.4l.25,3.32-3.27-.71-19-4.13,2.86-1.53-9.09,23.13L264.4,223l-2.69-2.52-14.88-14-1.76-1.65,1.59-1.82,15.88-18.11-.19.25,12.24-18.09-.11.18L288.69,142l1.4-2.48,2.28,1.71,6.5,4.87-2.5-.29L305,142l2.6-1.14.8,2.72,8.12,27.62-.78-1.2L334,185.51l.35.29.22.4,7.74,13.92c1.27,2.33,2.72,4.56,3.88,7l3.48,7.18Q356.68,228.58,363.38,243.07Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
-                      </g>
-                      <g id="mtn_right">
-                        <polyline points="316.61 122.89 285.85 70 275.72 38.53 255.85 4.62 249.14 14.15 218.59 57.59 219.94 69.71 189.16 108.51 234.76 99.39 246.27 86.04 246.27 61.3 266.26 57.49 250.08 29.89 255.79 13.72" fill="#fff"/>
-                        <path d="M460.49,258.69c-2.82-4.26-5.68-8.49-8.47-12.77s-5.62-8.53-8.38-12.82l-8.32-12.86c-1.4-2.13-2.7-4.33-3.92-6.57s-2.55-4.42-3.82-6.62l-.14-.24-.08-.26-10.13-31.47.22.5-19.87-33.91,4.2.17-37.26,53,.44-1.71,1.35,12.12.11,1-.64.81L335,245.86l-2.45-4,45.6-9.12-1.4.82,11.51-13.35-.61,1.63V195l2-.39,5-1,5-1c3.34-.59,6.71-1,10.06-1.54l-1.48,3.25-7.41-14.2-7.33-14.25-.12-.23.08-.2,6.19-16-5.23,16.35,0-.43,8.85,13.35,8.77,13.4,1.66,2.54-3.14.71c-3.31.75-6.6,1.59-9.92,2.27l-5,.9-5,.94,2-2.46v25.67l-.61.7-11.51,13.35-.56.65-.84.17-45.6,9.12-6.69,1.34,4.24-5.34,30.78-38.8-.53,1.83L360,193.66l-.1-.94.54-.77,37.26-53,2.24-3.18,2,3.35,19.87,33.91.14.24.08.26L432.12,205l-.22-.49c1.28,2.2,2.55,4.41,3.86,6.6s2.61,4.38,3.77,6.65l7.06,13.59c2.36,4.52,4.66,9.08,7,13.63S458.19,254.13,460.49,258.69Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
-                      </g>
+                    <g id="line_tr">
+                      <rect x="399.27" y="217.11" width="4" height="94.77" transform="translate(-9.31 528.52) rotate(-89.69)" fill="#fff"/>
                     </g>
-                    <text transform="translate(18.22 188.67)" font-size="62" fill="#fff" font-family="NexaRustSlab-BlackShadow01, Nexa Rust Slab">HI<tspan x="86.12" y="0" letter-spacing="-0.02em">D</tspan><tspan x="136.9" y="0" letter-spacing="-0.01em">E</tspan><tspan x="181.85" y="0">TO</tspan></text>
-                  </svg>
-                </div><!-- layer -->
-              </div><!-- scene -->
-            </div><!-- jumbotron__float -->
-          <div class="scroll js-arrow-scroll">
-            <span>Scroll Down</span>
-          </div><!-- scroll -->
-        </div><!-- jumbotron__background__gradient -->
+                    <g id="line_bl">
+                      <rect x="158.99" y="343.64" width="97.15" height="4" transform="translate(-144.79 -135.26) rotate(-0.15)" fill="#fff"/>
+                    </g>
+                    <g id="line_br">
+                      <rect x="351.7" y="343.33" width="97.74" height="4" transform="translate(-145 -134.5) rotate(-0.19)" fill="#fff"/>
+                    </g>
+                  </g>
+                  <g id="mountain">
+                    <g id="mtn_left">
+                      <polyline points="125.51 108.59 100.18 63.9 79.23 15.77 68.36 51.64 61.84 44.03 41.18 79.9 32.49 74.46 6.4 109.25 32.23 102.09 37.06 91.98 56.41 94.61 66.96 80.11 65.2 65.16 84.55 55.92 81.55 28.73" fill="#fff"/>
+                      <path d="M269.4,244.39l-7-10.79-6.93-10.84-6.87-10.87-3.43-5.44c-1.14-1.81-2.3-3.62-3.33-5.5l-.09-.16,0-.08c-1.67-4-3.44-8-5.18-12.06l-5.24-12-10.48-24.07,4.68-.27-10.87,35.87-1.32,4.36-3-3.46-6.52-7.61,4.06-.38-20.65,35.87-1.29,2.25-2.2-1.37-8.7-5.43,3.32-.62-26.09,34.78-2.67-3.91,25.83-7.16-1.59,1.33,4.84-10.11.79-1.64,1.81.25,19.34,2.64-2.36,1,10.55-14.51-.46,1.76-.88-7.47c-.28-2.49-.7-5-.9-7.47l-.15-1.91,1.56-.66,19.78-8.33-.85,1.53-.78-13.68-.71-13.69L227.73,178l2.21,13.52.16,1-1,.54-18.91,10.14,1.42-2.56c.4,2.48.56,5,.86,7.48l.88,7.47.11,1-.58.79-10.55,14.51-.88,1.21-1.48-.2-19.34-2.64,2.59-1.4L178.37,239l-.49,1-1.1.3L151,247.45l-7.07,2,4.4-5.87,26.09-34.78,1.38-1.84,1.95,1.22,8.7,5.43-3.49.87,20.65-35.87,1.76-3.06,2.3,2.68,6.52,7.61-4.29.9,10.87-35.87,2-6.51,2.71,6.23,10.48,24.07,5.24,12c1.75,4,3.47,8,5.3,12l-.12-.24c1.09,1.85,2,3.77,3,5.68l2.9,5.74,5.8,11.48,5.74,11.51Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
+                    </g>
+                    <g id="mtn_middle">
+                      <polyline points="219.5 107.28 188.52 51.62 170.27 36.14 162.15 8.52 153.48 12.31 146.98 7.43 132.78 32.67 120.54 50.76 104.65 68.86 119.53 82.82 128.62 59.7 147.62 63.83 145.97 38.22 159.18 19.23" fill="#fff"/>
+                      <path d="M363.38,243.07q-8.78-13.34-17.28-26.83l-4.26-6.74c-1.42-2.25-2.56-4.65-3.87-7l-7.74-13.92.57.69-18.25-15.48-.57-.48-.21-.72L303.64,145l3.4,1.58-8.67,3.79L297,151l-1.17-.87-6.5-4.87,3.68-.77-14.2,25.24-.05.09-.06.09L266.5,188l-.09.13-.1.12-15.88,18.11-.17-3.47,14.88,14-4,.91,9.09-23.13.78-2L273,193l19,4.13-3,2.6c-.12-2.14-.32-4.26-.47-6.4s-.08-4.28-.11-6.42l-.1-12.85v-.62l.28-.35,7.2-9.08,7.27-9-5.95,10-6,9.91.27-1,1.55,12.76c.24,2.13.56,4.25.71,6.38s.2,4.27.36,6.4l.25,3.32-3.27-.71-19-4.13,2.86-1.53-9.09,23.13L264.4,223l-2.69-2.52-14.88-14-1.76-1.65,1.59-1.82,15.88-18.11-.19.25,12.24-18.09-.11.18L288.69,142l1.4-2.48,2.28,1.71,6.5,4.87-2.5-.29L305,142l2.6-1.14.8,2.72,8.12,27.62-.78-1.2L334,185.51l.35.29.22.4,7.74,13.92c1.27,2.33,2.72,4.56,3.88,7l3.48,7.18Q356.68,228.58,363.38,243.07Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
+                    </g>
+                    <g id="mtn_right">
+                      <polyline points="316.61 122.89 285.85 70 275.72 38.53 255.85 4.62 249.14 14.15 218.59 57.59 219.94 69.71 189.16 108.51 234.76 99.39 246.27 86.04 246.27 61.3 266.26 57.49 250.08 29.89 255.79 13.72" fill="#fff"/>
+                      <path d="M460.49,258.69c-2.82-4.26-5.68-8.49-8.47-12.77s-5.62-8.53-8.38-12.82l-8.32-12.86c-1.4-2.13-2.7-4.33-3.92-6.57s-2.55-4.42-3.82-6.62l-.14-.24-.08-.26-10.13-31.47.22.5-19.87-33.91,4.2.17-37.26,53,.44-1.71,1.35,12.12.11,1-.64.81L335,245.86l-2.45-4,45.6-9.12-1.4.82,11.51-13.35-.61,1.63V195l2-.39,5-1,5-1c3.34-.59,6.71-1,10.06-1.54l-1.48,3.25-7.41-14.2-7.33-14.25-.12-.23.08-.2,6.19-16-5.23,16.35,0-.43,8.85,13.35,8.77,13.4,1.66,2.54-3.14.71c-3.31.75-6.6,1.59-9.92,2.27l-5,.9-5,.94,2-2.46v25.67l-.61.7-11.51,13.35-.56.65-.84.17-45.6,9.12-6.69,1.34,4.24-5.34,30.78-38.8-.53,1.83L360,193.66l-.1-.94.54-.77,37.26-53,2.24-3.18,2,3.35,19.87,33.91.14.24.08.26L432.12,205l-.22-.49c1.28,2.2,2.55,4.41,3.86,6.6s2.61,4.38,3.77,6.65l7.06,13.59c2.36,4.52,4.66,9.08,7,13.63S458.19,254.13,460.49,258.69Z" transform="translate(-143.89 -135.8)" fill="#fff"/>
+                    </g>
+                  </g>
+                  <text transform="translate(18.22 188.67)" font-size="62" fill="#fff" font-family="NexaRustSlab-BlackShadow01, Nexa Rust Slab">HI<tspan x="86.12" y="0" letter-spacing="-0.02em">D</tspan><tspan x="136.9" y="0" letter-spacing="-0.01em">E</tspan><tspan x="181.85" y="0">TO</tspan></text>
+                </svg>
+              </div><!-- layer -->
+            </div><!-- scene -->
+          </div><!-- jumbotron__float -->
+        <div class="scroll js-arrow-scroll">
+          <span>Scroll Down</span>
+        </div><!-- scroll -->
+        <!-- </div> --><!-- jumbotron__background__gradient -->
       </div><!-- jumbotron__background__img -->
     </header>
 

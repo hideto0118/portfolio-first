@@ -1,41 +1,5 @@
 (function(){
 
-//using request animation
-var scroll = function (){
-
-  windowYOffset = window.pageYOffset;
-  elBackgrounPos = "translateY(" + (windowYOffset * speed) + "px)";
-
-  parallaxBg.style.transform = elBackgrounPos;
-};
-
-var raf = window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.msRequestAnimationFrame ||
-    window.oRequestAnimationFrame;
-// var $window = $(window);
-var lastScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-if (raf) {
-    loop();
-}
-
-function loop() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (lastScrollTop === scrollTop) {
-        raf(loop);
-        return;
-    } else {
-        lastScrollTop = scrollTop;
-
-        // fire scroll function if scrolls vertically
-        scroll();
-        raf(loop);
-    }
-}
-
-
 //scroll smooothly from arrow and menu
 function scrollIt(element, duration = 200, easing = 'linear', callback) {
 // define timing functions

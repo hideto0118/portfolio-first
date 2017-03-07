@@ -1,12 +1,46 @@
 (function(){
 
+//Polyfill of IE/Edge for top bg image
+// image dimention: 1282 / 1920 = 0.66 (height / width)
+var imgHwRation = 1282 / 1920;
+var userAgent = window.navigator.userAgent.toLowerCase();
+console.log(userAgent);
+var isIEorEdge = userAgent.indexOf('edge') != -1 || userAgent.indexOf('msie') >= 0 || userAgent.indexOf('trident') >= 0;
+
+if (isIEorEdge){
+  console.log("This browser is IE or Edge");
+  var jumbotronBg = document.querySelector(".js-jumbotron__main-img");
+  var jumbotronBgParent = document.querySelector(".js-jumbotron__main-img--parent");
+
+  function calcRatio(){
+    var width = jumbotronBgParent.offsetWidth;
+    var height = jumbotronBgParent.offsetHeight;
+    var hwRatio = height / width;
+
+    if(hwRatio > imgHwRation){
+      //make height 100%
+      jumbotronBg.classList.remove("js-fullWidth");
+      jumbotronBg.classList.add("js-fullHeight");
+    }else{
+      //make width 100%
+      jumbotronBg.classList.remove("js-fullHeight");
+      jumbotronBg.classList.add("js-fullWidth");
+    }
+  };
+
+  calcRatio();
+  window.onresize = function(){
+    calcRatio();
+  };
+}
+
+
 // floating charactor
 var scene = document.getElementById('scene');
 var parallaxCharactor = new Parallax(scene);
 
 // Parallax with scroll
-var parallaxBg = document.querySelector(".js-parallax");
-var parallaxBg = document.querySelector(".temporary");
+var parallaxBg = document.querySelector(".js-jumbotron__main-img");
 var speed = 0.3;
 var windowYOffset;
 var elBackgrounPos;

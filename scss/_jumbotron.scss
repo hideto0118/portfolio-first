@@ -13,12 +13,42 @@
   color: #fff;
 }
 
-.parallax__outer {
+.parallax {
   height: 100%;
   width: 100%;
 }
 
-.temporary {
+.jumbotron__main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  will-change: transform;
+}
+
+/*the following two blocks are for IE/Edge Polyfill of top bg img size*/
+.js-fullHeight {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.js-fullWidth {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/*.temporary {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -29,35 +59,7 @@
   background-position: 0 0;
   background-size: cover;
   will-change: transform;
-}
-
-.jumbotron__background__img {
-  background: $main-color;
-/*  background: linear-gradient($main-color, $sub-color);*/
-/*  background: url("../img/woods.jpg") top;*/
-  background-position: 0 0;
-  background-size: cover;
-/*  position: absolute;*/
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  /*transform: translateZ(-300px) scale(2);*/ /*parallax*/
-  z-index: -1; /*parallax*/
-}
-
-.jumbotron__background__gradient {
- /* background: $main-color;
-  background: linear-gradient($main-color, $sub-color);*/
-  background-size: cover;
-  /*position: absolute;*/
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  /*transform: translateZ(-300px) scale(2);*/ /*parallax*/
-  z-index: 0; /*parallax*/
-}
+}*/
 
 .jumbotron__float {
   text-align: center;
@@ -67,8 +69,6 @@
   left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
-/*  background: #fff;*/
-/*  overflow: hidden;*/
 }
 
 .jumbotron__float__img {
@@ -76,18 +76,6 @@
   width: 60%;
   animation: fadeInUp 0.8s ease-out;
 }
-
-/*.jumbotron__text {
-  margin: 3vh 5% 0;
-  h1 {
-    margin-top: 0;
-    font-size: 5rem;
-    animation: fadeInUp 0.8s ease-out;
-  }
-  h3 {
-    animation: fadeInUp 0.8s ease-out;
-  }
-}*/
 
 .scroll {
   display: flex;
