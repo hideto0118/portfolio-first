@@ -137,17 +137,17 @@
         ?>
 
           <div class="gallery__row">
-            <div id="gallery__item03" class="gallery__item item03">
+            <a id="gallery__item03" class="gallery__item item03" href="http://hidestagram.hidetoyasunori.com/" target="_blank">
               <img src="<?php echo get_template_directory_uri(); ?>/img/hotel.jpg" class="gallery__img">
               <div class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">React App</h3>
-                  <p>Coming Soon</p>
+                  <h3 class="gallery__item__title">Hidestagram</h3>
+                  <p>React, Redux, Sentry</p>
                 </div>
               </div>
-            </div>
+            </a>
 
             <a id="gallery__item04" class="gallery__item item04" href="http://webdev-bodymake.com/" target="_blank">
                <img src="<?php echo get_template_directory_uri(); ?>/img/vancouver.jpg" class="gallery__img">
