@@ -137,26 +137,26 @@
         ?>
 
           <div class="gallery__row">
-            <a id="gallery__item03" class="gallery__item item03" href="http://hidestagram.hidetoyasunori.com/" target="_blank">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/hotel.jpg" class="gallery__img">
-              <div class="gallery__item__cover">
-                <div class="gallery__border__right"></div>
-                <div class="gallery__border__bottom"></div>
-                <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">Hidestagram</h3>
-                  <p>React, Redux, Sentry</p>
-                </div>
-              </div>
-            </a>
-
-            <a id="gallery__item04" class="gallery__item item04" href="http://webdev-bodymake.com/" target="_blank">
-               <img src="<?php echo get_template_directory_uri(); ?>/img/vancouver.jpg" class="gallery__img">
+            <a id="gallery__item03" class="gallery__item item03" href="http://webdev-bodymake.com/" target="_blank">
+               <img src="<?php echo get_template_directory_uri(); ?>/img/laptop_beat_sized_high.jpg" class="gallery__img">
               <div class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
                   <h3 class="gallery__item__title">Personal Blog</h3>
                   <p>Web Design, Web Development, Wordpress, SVG Animation, Instagram API</p>
+                </div>
+              </div>
+            </a>
+
+            <a id="gallery__item04" class="gallery__item item04" href="http://hidestagram.hidetoyasunori.com/" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/camera-mid-quality.jpg" class="gallery__img">
+              <div class="gallery__item__cover">
+                <div class="gallery__border__right"></div>
+                <div class="gallery__border__bottom"></div>
+                <div class="gallery__item__text">
+                  <h3 class="gallery__item__title">Hidestagram</h3>
+                  <p>React, Redux, Sentry</p>
                 </div>
               </div>
             </a>
@@ -173,13 +173,13 @@
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
-                  <h3 class="gallery__item__title">Movie-poster Finder</h3>
+                  <h3 class="gallery__item__title">Movie Poster Search Engine</h3>
                   <p>Description is going to be shown here.</p>
                 </div>
               </div>
             </a>
             <div id="gallery__item06" class="gallery__item item06">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/harley.jpg" class="gallery__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/magazines.jpg" class="gallery__img">
               <div class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>

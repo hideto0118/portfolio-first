@@ -8,6 +8,7 @@
   $whole_page_image = get_field('whole_page_image');
   $logo01 = get_field('logo01');
   $logo02 = get_field('logo02');
+  $visit_website_url = get_field('jump_url');
 
   $class_prefix = get_field('class_prefix');
 
@@ -21,7 +22,7 @@
 <body class="<?= $class_prefix ?>">
 <div class="wrapper">
     <header class="customized__jumbotron">
-      <a class="marvel__jumbotron__link " href="http://protein-or-die.sakura.ne.jp/customized-heroes/" target="_blank"><?php the_image($top_logo, 'full', 'customized__jumbotron__logoImg'); ?></a>
+      <a class="marvel__jumbotron__link " href="<?= $visit_website_url ?>" target="_blank"><?php the_image($top_logo, 'full', 'customized__jumbotron__logoImg'); ?></a>
       <?php if( $page == 'Marvel Heroes'): ?>
           <?php the_image($top_image, 'full', 'customized__jumbotron__topImg'); ?>
     <?php endif; ?>
@@ -42,7 +43,7 @@
     <div class="main__inner">
 
     <section class="individual__title">
-      <h1 class="individual__title__main"><a href="http://protein-or-die.sakura.ne.jp/customized-heroes/" target="_blank"><?php echo get_field('main_title'); ?></a></h1>
+      <h1 class="individual__title__main"><a href="<?= $visit_website_url ?>" target="_blank"><?php echo get_field('main_title'); ?></a></h1>
       <h2 class="individual__title__sub"><?php echo get_field('sub_title'); ?></h2>
 <!--       <?php echo "string"; ?>
       <?= "sssss" ?> -->
@@ -98,7 +99,7 @@
     </section>
 
     <section class="visit-website">
-      <a class="visit-website__jump customized-hover-color customized-bg customized-bd" href="http://protein-or-die.sakura.ne.jp/customized-heroes/" target="_blank"><span class="visit-website__jump__text">Visit Website</span></a>
+      <a class="visit-website__jump customized-hover-color customized-bg customized-bd" href="<?= $visit_website_url ?>" target="_blank"><span class="visit-website__jump__text">Visit Website</span></a>
     </section>
 
     <section class="morework">
