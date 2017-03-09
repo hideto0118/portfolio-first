@@ -180,3 +180,35 @@ $border-width: 6px;
 .item06 {
   width: 64%;
 }
+
+/*******************
+Touch Screen Device
+*********************/
+.js-touch-gallery__item__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: $border-width solid $sub-color;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $gallery-anime ease, visibility $gallery-anime ease;
+}
+
+.js-touch-gallery__item__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*  opacity: 0;
+  visibility: hidden;*/
+}
+
+
+
+
+

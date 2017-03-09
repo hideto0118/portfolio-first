@@ -392,4 +392,125 @@ var sceneEmail = new ScrollMagic.Scene({
 // .addIndicators({name: "email (duration: 0)"})
 .addTo(controller);
 
+
+var isFirstTouch = true;
+//detect any first touch from a touch devide
+window.addEventListener('touchstart', function() {
+
+  if(isFirstTouch == true){
+    isFirstTouch = false;
+    console.log("running!");
+    var classesToRemove = ["gallery__item__cover", "gallery__border__right", "gallery__border__bottom", "gallery__item__text"]
+
+    classesToRemove.forEach(function(oneClass) {
+      [].map.call(document.querySelectorAll('.' + oneClass), function(el) {
+        if(oneClass == "gallery__item__cover" || "gallery__item__text")
+        {
+          el.classList.add("js-touch-" + oneClass);
+        }
+        el.classList.remove(oneClass);
+      });
+    });
+
+    var itemCover01 = document.querySelector("#js-touch-gallery__item__cover01");
+    var heightitemCover01 = itemCover01.offsetHeight;
+    var MobileSceneGalleryItem01 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item01",
+      offset: 0,
+      duration: heightitemCover01
+    })
+    .on("enter", function () {
+      itemCover01.style.opacity = "1";
+      itemCover01.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover01.style.opacity = "0";
+      itemCover01.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem01 (duration: 0)"})
+    .addTo(controller);
+
+    var itemCover02 = document.querySelector("#js-touch-gallery__item__cover02");
+    var heightitemCover02 = itemCover02.offsetHeight;
+    var MobileSceneGalleryItem02 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item02",
+      offset: 0,
+      duration: heightitemCover02
+    })
+    .on("enter", function () {
+      itemCover02.style.opacity = "1";
+      itemCover02.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover02.style.opacity = "0";
+      itemCover02.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem02 (duration: 0)"})
+    .addTo(controller);
+
+    var itemCover03 = document.querySelector("#js-touch-gallery__item__cover03");
+    var heightitemCover03 = itemCover03.offsetHeight;
+    var MobileSceneGalleryItem03 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item03",
+      offset: 0,
+      duration: heightitemCover03
+    })
+    .on("enter", function () {
+      itemCover03.style.opacity = "1";
+      itemCover03.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover03.style.opacity = "0";
+      itemCover03.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem03 (duration: 0)"})
+    .addTo(controller);
+
+  var itemCover04 = document.querySelector("#js-touch-gallery__item__cover04");
+    var heightitemCover04 = itemCover04.offsetHeight;
+    var MobileSceneGalleryItem04 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item04",
+      offset: 0,
+      duration: heightitemCover04
+    })
+    .on("enter", function () {
+      itemCover04.style.opacity = "1";
+      itemCover04.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover04.style.opacity = "0";
+      itemCover04.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem04 (duration: 0)"})
+    .addTo(controller);
+
+  var itemCover05 = document.querySelector("#js-touch-gallery__item__cover05");
+    var heightitemCover05 = itemCover05.offsetHeight;
+    var MobileSceneGalleryItem05 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item05",
+      offset: 0,
+      duration: heightitemCover05
+    })
+    .on("enter", function () {
+      itemCover05.style.opacity = "1";
+      itemCover05.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover05.style.opacity = "0";
+      itemCover05.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem05 (duration: 0)"})
+    .addTo(controller);
+
+    var itemCover06 = document.querySelector("#js-touch-gallery__item__cover06");
+    var heightitemCover06 = itemCover06.offsetHeight;
+    var MobileSceneGalleryItem06 = new ScrollMagic.Scene({
+      triggerElement: "#gallery__item06",
+      offset: 0,
+      duration: heightitemCover06
+    })
+    .on("enter", function () {
+      itemCover06.style.opacity = "1";
+      itemCover06.style.visibility = "visible";})
+    .on("leave", function () {
+      itemCover06.style.opacity = "0";
+      itemCover06.style.visibility = "hidden";})
+    // .addIndicators({name: "MobileSceneGalleryItem06 (duration: 0)"})
+    .addTo(controller);
+  }
+
+});//touchstart
+
+
+
 }());

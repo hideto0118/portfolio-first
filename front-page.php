@@ -115,7 +115,7 @@
         ?>
           <a id="gallery__item0<?php echo $count; ?>" class="gallery__item item0<?php echo $count; ?>" href="<?php echo get_permalink(); ?>">
           <?php the_image($thumbnail_image, 'full', 'gallery__img'); ?>
-            <div class="gallery__item__cover">
+            <div id="js-touch-gallery__item__cover0<?php echo $count; ?>" class="gallery__item__cover">
               <div class="gallery__border__right"></div>
               <div class="gallery__border__bottom"></div>
               <div class="gallery__item__text">
@@ -139,7 +139,7 @@
           <div class="gallery__row">
             <a id="gallery__item03" class="gallery__item item03" href="http://webdev-bodymake.com/" target="_blank">
                <img src="<?php echo get_template_directory_uri(); ?>/img/laptop_beat_sized_high.jpg" class="gallery__img">
-              <div class="gallery__item__cover">
+              <div id="js-touch-gallery__item__cover03" class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
@@ -151,7 +151,7 @@
 
             <a id="gallery__item04" class="gallery__item item04" href="http://hidestagram.hidetoyasunori.com/" target="_blank">
               <img src="<?php echo get_template_directory_uri(); ?>/img/camera-mid-quality.jpg" class="gallery__img">
-              <div class="gallery__item__cover">
+              <div id="js-touch-gallery__item__cover04" class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
@@ -163,13 +163,13 @@
           </div>
 
           <div class="gallery__row">
-            <a id="gallery__item05" class="gallery__item item05" href="http://protein-or-die.sakura.ne.jp/fav-movie-poster/" target="_blank">
+            <a id="gallery__item05" class="gallery__item item05" href="http://movie-poster.hidetoyasunori.com/" target="_blank">
             <picture>
               <source media="(max-width:500px)" srcset="<?php echo  get_template_directory_uri(); ?>/img/movieposter_square.jpg">
               <source media="(max-width:1150px)" srcset="<?php echo  get_template_directory_uri(); ?>/img/movieposter.jpg">
               <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/img/movieposter_square.jpg" alt="movieposter_square">
             </picture>
-              <div class="gallery__item__cover">
+              <div id="js-touch-gallery__item__cover05" class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
@@ -180,7 +180,7 @@
             </a>
             <div id="gallery__item06" class="gallery__item item06">
               <img src="<?php echo get_template_directory_uri(); ?>/img/magazines.jpg" class="gallery__img">
-              <div class="gallery__item__cover">
+              <div id="js-touch-gallery__item__cover06" class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
@@ -250,11 +250,11 @@
         </div>
         <div id="about__description" class="about__description">
           <h3>I am.</h3>
-          <p>I'm Hideto, who is front-end developer and loves design and coding. I've always enjoyed being crative and chanllenged myself in design and building a web site. </p>
+          <p>I'm Hideto, who is front-end developer and loves design and coding. I've always enjoyed being creative and chanllenging myself in designing and building a web site. </p>
           <h3>I work.</h3>
           <p>When I work, I devote every single tip of myself to a project. I'm always punctual and a great team player. I never stop learning and keep running with new coming skills. </p>
           <h3>I love.</h3>
-          <p>I'm pretty happy as long as I code everyday and workout 3 times a week. I also love grabbing <span class="cross-text">beer</span> kale protein smoothies, hiking, and playing rugby. I've tackled any coding bugs and beaten them all up! Let me know any troubles of web stuff. I will knock them down ASAP!</p>
+          <p>I'm pretty happy as long as I code everyday and workout 3 times a week. I also love grabbing <span class="cross-text">beer</span> kale protein smoothies. And hiking and playing rugby too. I've tackled any coding bugs and beaten them all up! Let me know any troubles of web stuff. I will knock them down ASAP!</p>
           <ul class="about__description__sns">
             <li><a href="https://github.com/hideto0118" target="_blank"><svg class="icon__sns icon__sns--github"><use xlink:href="#logo-github"></use></svg></a></li>
             <li><a href="https://www.linkedin.com/in/hidetoyasunori" target="_blank"><svg class="icon__sns icon__sns--linkedin"><use xlink:href="#logo-linkedin"></use></svg></a></li>
@@ -272,7 +272,7 @@
             <h4>Front End</h4>
             <ul>
               <li>HTML<span class="hundred"></span></li>
-              <li>CSS, Sass<span class="seventyFive"></span></li>
+              <li>CSS, SCSS<span class="hundred"></span></li>
               <li>JavaScript, ES6<span class="seventyFive"></span></li>
             </ul>
           </div>
