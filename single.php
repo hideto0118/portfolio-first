@@ -20,6 +20,7 @@
 
 ?>
 <body class="<?= $class_prefix ?>">
+<?php include_once("analyticstracking.php") ?>
 <div class="wrapper">
     <header class="customized__jumbotron">
       <a class="marvel__jumbotron__link " href="<?= $visit_website_url ?>" target="_blank"><?php the_image($top_logo, 'full', 'customized__jumbotron__logoImg'); ?></a>

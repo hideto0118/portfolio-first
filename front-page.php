@@ -5,6 +5,7 @@
   }
  ?>
 <body>
+<?php include_once("analyticstracking.php") ?>
 <!-- SVG Sprite -->
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="display: none;">
   <defs>
