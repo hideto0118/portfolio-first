@@ -13,7 +13,7 @@ add_action('init', 'register_theme_menus');
 
 function wp_theme_styles() {
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/bundle.css');
-  wp_enqueue_style( 'google_fonts', "https://fonts.googleapis.com/css?family=Ubuntu|Merriweather");
+  wp_enqueue_style( 'google_fonts', "https://fonts.googleapis.com/css?family=Ubuntu|Merriweather|Roboto+Slab|Parisienne");
 }
 
 add_action('wp_enqueue_scripts', 'wp_theme_styles');

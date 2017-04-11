@@ -2,6 +2,58 @@
   text-align: center;
 }
 
+.skill__jump {
+  margin: 1.5rem;
+  height: 40px;
+  width: 300px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid $sub-color;
+  transition: background 0.5s ease;
+  position: relative;
+  &:hover {
+    .skill__jump__url {
+      color: #fff;
+    }
+    .skill__jump__bubble {
+      opacity: 1;
+      transform: scale(18);
+    }
+  }
+  .skill__jump__bubble {
+     transition: transform 0.5s ease,
+                 opacity 0.5s ease;
+  }
+}
+
+.skill__jump__url {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  padding: 20px 0;
+  width: 100%;
+  color: #2455a9;
+  transition: color 0.5s ease;
+}
+
+.skill__jump__bubble {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: $sub-color;
+}
+
+
 .skill_range_outer {
   display: flex;
   justify-content: center;

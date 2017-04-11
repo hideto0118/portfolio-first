@@ -24,7 +24,6 @@ I animate objects with only **opacity** and **transform** which smoothly work be
 **SVG Animations** - "_Hideto_" animation in the middle of the portfoli is activated by JavaScript of GSAP and ScrollMagic.js.   
 Check my CodePen for more SVG annimations:  https://codepen.io/Hideto/
 
-
 ## Development
 ### JavaScript
 I didn't use jQuery because extra JavaScript file request impacts page loading time also it performs poor for animations.
@@ -36,6 +35,13 @@ Developing this website as an original theme with starting from scratch.  I used
 ### CSS Architecture
 * BEM (http://getbem.com/naming)
 * SMACSS (https://smacss.com)
+
+## Accessibility
+## Role
+Roles are added for Header, Main, Footer and Nav.
+## Img Alt
+Img tag's alt has descriptive texts
+## 
 
 ## Performance Optimaization
 * Images - Compressed and responsive image size with srcset.

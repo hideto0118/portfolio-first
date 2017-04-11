@@ -29,12 +29,12 @@
 </svg>
 <!-- end of SVG Sprite -->
 <div class="wrapper">
-    <header id="hello" class="jumbotron">
+    <header id="hello" class="jumbotron" role="banner">
       <div class="js-parallax parallax js-jumbotron__main-img--parent">
       <!-- <div class="temporary"></div> -->
-      <img class="jumbotron__main-img js-jumbotron__main-img" src="<?php echo get_template_directory_uri(); ?>/img/road04.jpg" alt="jumbotoron main image">
+      <img class="jumbotron__main-img js-jumbotron__main-img" src="<?php echo get_template_directory_uri(); ?>/img/road04.jpg" alt="jumbotoron background image with mountains covered with snow">
         <!-- <div class="jumbotron__background__gradient"> -->
-        <nav class="navbar">
+        <nav class="navbar" role="navigation">
           <div class="navbar__logo">
             <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_darkblue.svg"></a>
           </div>
@@ -46,11 +46,11 @@
           <div class="jumbotron__float">
             <div id="scene">
               <div class="layer" data-depth="0.3">
-                <svg id="Layer_1" class="fadeInUp" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316.6 264.19">
+                <svg id="svgMountainLogo" class="fadeInUp js-svgMountainLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316.6 264.19" xml:space="preserve">
                   <title>hideto_logo_mountain</title>
-                  <text transform="translate(46.53 248.09)" font-size="33" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.31" font-family="SnellRoundhand-Bold, Snell Roundhand" font-weight="700">Vancouve<tspan x="132.53" y="0" letter-spacing="-0.11em">r</tspan><tspan x="141.7" y="0" letter-spacing="0em">, BC</tspan></text>
-                  <text transform="translate(121.88 215.78)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700">D<tspan x="11.02" y="0" letter-spacing="-0.01em">ev</tspan><tspan x="28.46" y="0">e</tspan><tspan x="36.98" y="0" letter-spacing="-0.01em">l</tspan><tspan x="41.93" y="0">oper</tspan></text>
-                  <text transform="translate(121.06 132.89)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700"><tspan letter-spacing="-0.01em">F</tspan><tspan x="9.68" y="0" letter-spacing="-0.01em">r</tspan><tspan x="16.26" y="0">ont-E</tspan><tspan x="57.94" y="0" letter-spacing="0em">n</tspan><tspan x="68.02" y="0">d</tspan></text>
+                  <text transform="translate(46.53 248.09)" font-size="33" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.31" font-family="SnellRoundhand-Bold, Snell Roundhand, Parisienne" font-weight="700">Vancouver, BC</text>
+                  <text transform="translate(121.88 215.78)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab, Franklin Gothic Medium, Segoe UI Semibold, serif" font-weight="700">Developer</text>
+                  <text transform="translate(121.06 132.89)" font-size="16" fill="#fff" font-family="RobotoSlab-Bold, Roboto Slab, serif" font-weight="700">Front-End</text>
                   <g id="line">
                     <g id="line_tl">
                       <rect x="159.15" y="261.56" width="96.21" height="4" transform="translate(-144.73 -135.14) rotate(-0.18)" fill="#fff"/>
@@ -91,7 +91,7 @@
       </div><!-- jumbotron__background__img -->
     </header>
 
-  <main>
+  <main role="main">
     <div class="main__inner">
       <section id="work" class="work">
         <h2 class="section-title">Works</h2>
@@ -168,14 +168,14 @@
             <picture>
               <source media="(max-width:500px)" srcset="<?php echo  get_template_directory_uri(); ?>/img/movieposter_square.jpg">
               <source media="(max-width:1150px)" srcset="<?php echo  get_template_directory_uri(); ?>/img/movieposter.jpg">
-              <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/img/movieposter_square.jpg" alt="movieposter_square">
+              <img class="gallery__img" src="<?php echo get_template_directory_uri(); ?>/img/movieposter_square.jpg" alt="image for movieposter jump with charlie chaplin">
             </picture>
               <div id="js-touch-gallery__item__cover05" class="gallery__item__cover">
                 <div class="gallery__border__right"></div>
                 <div class="gallery__border__bottom"></div>
                 <div class="gallery__item__text">
                   <h3 class="gallery__item__title">Movie Poster Search Engine</h3>
-                  <p>Description is going to be shown here.</p>
+                  <p>Web Design, Web Development, Web API, AJAX</p>
                 </div>
               </div>
             </a>
@@ -197,10 +197,11 @@
         <div class="about__title">
           <h2 class="section-title">About</h2>
         </div>
-        <div class="hideto_svg">
-        <svg id="hideto_draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.08 44.04">
+        <div class="hideto_svg js-hideto_svg">
+        <p class="js-ie-hideto-text">Hideto</p>
+        <svg id="hideto_draw" class="js-hideto_draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.08 44.04">
             <title>Hideto SVG</title>
-            <defs>
+            <defs class="js-def-hideto_draw">
               <clipPath id="clip_h">
                 <path d="M36.54,22.9l-1.89,2.93a49.8,49.8,0,0,1-9.13,11,28.61,28.61,0,0,1-10.11,5.5A27.35,27.35,0,0,1,8,43.54a12.06,12.06,0,0,1-2.42-.21,12.16,12.16,0,0,1-2.06-.63q-3-1.33-3-3.64v-.91l.43-1.26a3.23,3.23,0,0,1,1.28-1c.33-.09.62-.16.85-.21a3.7,3.7,0,0,1,.71-.07q1.42,0,1.74.82a3.93,3.93,0,0,1,.32,1.33.8.8,0,0,1-.63.79H4.56q-.7.14-.7,1.52a2.53,2.53,0,0,0,.35,1.27,3,3,0,0,0,1.16,1.08,4.38,4.38,0,0,0,2.2.47H8.69q3.92,0,8.12-3.22Q21.5,36,26.68,28.35l1.33-2,.7-1.19.91-1.33.35-.7,1.4-1.9a70.44,70.44,0,0,1,6.19-7.84,46.59,46.59,0,0,1,6.75-5.52L45.51,7l.42-.28L44.18,6.3A54.1,54.1,0,0,0,31.93,4.62a24.35,24.35,0,0,0-8.45,1.29,15.74,15.74,0,0,0-5.92,3.82,14.66,14.66,0,0,0-3.83,6.93,11.5,11.5,0,0,0-.14,1.47,5.18,5.18,0,0,0,1.32,3.71,4.56,4.56,0,0,0,3.48,1.4,11.11,11.11,0,0,0,1.5-.17,8.52,8.52,0,0,0,2.75-1.16l1.81-1.47.83-.91.14-.21.21-.07.07.28a1.66,1.66,0,0,1-.35.77q-.21.28-1.68,1.75a12.74,12.74,0,0,1-3.78,2.59,10.21,10.21,0,0,1-4.06.84A5.15,5.15,0,0,1,11.91,24a5.54,5.54,0,0,1-1.4-4,8.56,8.56,0,0,1,.14-1.54,9.21,9.21,0,0,1,.67-2,26.66,26.66,0,0,1,1.44-2.73,21.48,21.48,0,0,1,4-4.44,32.84,32.84,0,0,1,5.85-4,24.24,24.24,0,0,1,11.62-3A39.21,39.21,0,0,1,46.07,4.48l2.52.84,1.26-.56A17.43,17.43,0,0,1,53.42,3.5l.63-.21L55.38,3a11.09,11.09,0,0,1,2.87-.42,3.87,3.87,0,0,1,2.52.7,1.15,1.15,0,0,1,.35.84.67.67,0,0,1-.21.49,6,6,0,0,1-1.82,1.33,4,4,0,0,1-.91.35l-1.4.42q-.21.07-1.37.28a12,12,0,0,1-2.13.21h-4.9a20.53,20.53,0,0,0-3.08,2.88Q44,11.57,41.59,15q-.7,1-1.89,2.81-.84,1.34-1.68,2.6Zm1.55,16.33L50.25,21q4.34-5.8,7.5-9.23a44.65,44.65,0,0,1,5.88-5.32A34,34,0,0,1,71.16,2,16.65,16.65,0,0,1,77.22.56a6.33,6.33,0,0,1,1.23.1L79.7.94a1.32,1.32,0,0,1,.95.59q.21.49-.35.7H80l-.77-.63a2.62,2.62,0,0,0-1.75-.49q-3.08,0-7.7,3.57Q63.93,9.24,57.5,18.34l-2,3L53.84,23.8,41.52,42.28l-5.2,0ZM58.88,4.69q.42-.77-.17-1a4.09,4.09,0,0,0-1.37-.21H56.15l-1.54.28a11.71,11.71,0,0,0-4.27,2,10,10,0,0,0,4.34.63l1.82-.28a8.66,8.66,0,0,0,1.75-.73A1.53,1.53,0,0,0,58.88,4.69Z"/>
               </clipPath>
@@ -247,15 +248,15 @@
           </svg>
         </div>
         <div class="about__pic">
-          <img id="about__pic__item" class="about__pic__item" src="<?php echo get_template_directory_uri(); ?>/img/hideto_with_moon.jpg">
+          <img id="about__pic__item" class="about__pic__item" src="<?php echo get_template_directory_uri(); ?>/img/hideto_loveball.jpg">
         </div>
         <div id="about__description" class="about__description">
           <h3>I am.</h3>
-          <p>I'm Hideto, who is front-end developer and loves design and coding. I've always enjoyed being creative and chanllenging myself in designing and building a web site. </p>
+          <p>I'm Hideto, a front-end developer who loves design and coding. I've always enjoyed being creative and challenging myself by designing and building a website. </p>
           <h3>I work.</h3>
-          <p>When I work, I devote every single tip of myself to a project. I'm always punctual and a great team player. I never stop learning and keep running with new coming skills. </p>
+          <p>When I work on a project, I devote every bit of myself to it. I'm always punctual and a great team player. I never stop learning and keep improving with newly-learned skills.</p>
           <h3>I love.</h3>
-          <p>I'm pretty happy as long as I code everyday and workout 3 times a week. I also love grabbing <span class="cross-text">beer</span> kale protein smoothies. And hiking and playing rugby too. I've tackled any coding bugs and beaten them all up! Let me know any troubles of web stuff. I will knock them down ASAP!</p>
+          <p>I'm pretty happy as long as I code everyday and workout 3 times a week. I also love grabbing <span class="cross-text">beer</span> kale protein smoothies, hiking, and playing rugby too. I've tackled many coding bugs and beaten them all! Let me know if you have any troubles with web stuff. I will knock them out ASAP!</p>
           <ul class="about__description__sns">
             <li><a href="https://github.com/hideto0118" target="_blank"><svg class="icon__sns icon__sns--github"><use xlink:href="#logo-github"></use></svg></a></li>
             <li><a href="https://www.linkedin.com/in/hidetoyasunori" target="_blank"><svg class="icon__sns icon__sns--linkedin"><use xlink:href="#logo-linkedin"></use></svg></a></li>
@@ -304,10 +305,14 @@
               <li>BEM, SMACSS, OOCSS</li>
               <li>GSAP</li>
               <li>SVG Animation</li>
-              <li>Cross Browser</li>
+              <li>D3.js</li>
               <li>jQuery</li>
             </ul>
           </div>
+        </div>
+        <div class="skill__jump js-skill__jump">
+          <a class="skill__jump__url" href="http://d3js.hidetoyasunori.com/">View Skills in a Bubble Chart</a>
+          <div class="skill__jump__bubble"></div>
         </div>
       </section>
        <section id="contact" class="contact">
@@ -319,8 +324,8 @@
        </section>
     </div><!-- main__inner -->
   </main>
-  <footer id="footer">
-    <small>Created by Hideto with full of passion</small>
+  <footer id="footer" role="contentinfo">
+    <small>Created with full of passion by Hideto</small>
   </footer>
 </div><!-- wrapper -->
 <?php get_footer(); ?>

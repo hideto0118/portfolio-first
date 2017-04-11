@@ -5,10 +5,23 @@
 var imgHwRation = 1282 / 1920;
 var userAgent = window.navigator.userAgent.toLowerCase();
 console.log(userAgent);
-var isIEorEdge = userAgent.indexOf("edge") != -1 || userAgent.indexOf("msie") >= 0 || userAgent.indexOf("trident") >= 0;
+var isEdge = userAgent.indexOf("edge") != -1;
+var isIE = userAgent.indexOf("msie") >= 0 || userAgent.indexOf("trident") >= 0;
 
-if (isIEorEdge){
+if (isIE){
+  console.log("This browser is IE");
+  //Set top mountain logo width
+  var svgMountainLogo = document.querySelector(".js-svgMountainLogo");
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+  var svgMountainLogoHeight = windowWidth * 0.6 * 1.20 + "px";
+  console.log(svgMountainLogo);
+  svgMountainLogo.setAttribute("height", svgMountainLogoHeight);
+}
+
+if (isEdge || isIE){
   console.log("This browser is IE or Edge");
+
+  //set top background image center and cover
   var jumbotronBg = document.querySelector(".js-jumbotron__main-img");
   var jumbotronBgParent = document.querySelector(".js-jumbotron__main-img--parent");
 
@@ -39,47 +52,48 @@ if (isIEorEdge){
 var scene = document.getElementById("scene");
 var parallaxCharactor = new Parallax(scene);
 
-// Parallax with scroll
-var parallaxBg = document.querySelector(".js-jumbotron__main-img");
-var speed = 0.3;
-var windowYOffset;
-var elBackgrounPos;
+if(isEdge != true && isIE != true){
+  // Parallax with scroll
+  var parallaxBg = document.querySelector(".js-jumbotron__main-img");
+  var speed = 0.3;
+  var windowYOffset;
+  var elBackgrounPos;
 
-//using request animation
-var scroll = function (){
+  //using request animation
+  var scroll = function (){
 
-  windowYOffset = window.pageYOffset;
-  elBackgrounPos = "translateY(" + (windowYOffset * speed) + "px)";
+    windowYOffset = window.pageYOffset;
+    elBackgrounPos = "translateY(" + (windowYOffset * speed) + "px)";
 
-  parallaxBg.style.transform = elBackgrounPos;
-};
+    parallaxBg.style.transform = elBackgrounPos;
+  };
 
-var raf = window.requestAnimationFrame ||
-  window.webkitRequestAnimationFrame ||
-  window.mozRequestAnimationFrame ||
-  window.msRequestAnimationFrame ||
-  window.oRequestAnimationFrame;
-// var $window = $(window);
-var lastScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var raf = window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    window.oRequestAnimationFrame;
+  // var $window = $(window);
+  var lastScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-if (raf) {
-  loop();
-}
+  if (raf) {
+    loop();
+  }
 
-function loop() {
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if (lastScrollTop === scrollTop) {
-    raf(loop);
-    return;
-  } else {
-    lastScrollTop = scrollTop;
+  function loop() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (lastScrollTop === scrollTop) {
+      raf(loop);
+      return;
+    } else {
+      lastScrollTop = scrollTop;
 
-    // fire scroll function if scrolls vertically
-    scroll();
-    raf(loop);
+      // fire scroll function if scrolls vertically
+      scroll();
+      raf(loop);
+    }
   }
 }
-
 
 //scroll smooothly from arrow and menu
 function scrollIt(element, duration, easing, callback) {
@@ -202,73 +216,9 @@ contactJump.addEventListener("click", function(){
 });
 
 
-//Hideto Text Animation in About Section
-var h_left = document.getElementById("h_left");
-var h_middle = document.getElementById("h_middle");
-var h_right = document.getElementById("h_right");
-var i_main = document.getElementById("i_main");
-var i_dot = document.getElementById("i_dot");
-var d = document.getElementById("d");
-var e = document.getElementById("e");
-var t_main = document.getElementById("t_main");
-var t_top = document.getElementById("t_top");
-var o = document.getElementById("o");
-
 var controller = new ScrollMagic.Controller();
 
-var tweenHidetoSVG = new TimelineMax()
-  .add(TweenMax.to(
-        h_left,
-        0.3,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        h_middle,
-        0.1,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        h_right,
-        0.2,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        i_main,
-        0.2,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        d,
-        0.3,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        e,
-        0.3,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        t_main,
-        0.2,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        o,
-        0.2,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        i_dot,
-        0.1,
-        {strokeDashoffset: 0, ease:Linear.easeNone}))
-  .add(TweenMax.to(
-        t_top,
-        0.1,
-        {strokeDashoffset: 0, ease:Linear.easeNone}));
-
-// build scene for Hideto SVG
-var sceneHidetoSvg = new ScrollMagic.Scene({
-  triggerElement: "#hideto_draw",
-  offset: -100,
-  triggerHook: 0.65,
-  duration: 300,
-  tweenChanges: true})
-.setTween(tweenHidetoSVG)
-// .addIndicators({name: "hideto SVG"})
-.addTo(controller);
-
+//Works items show up
 var sceneGalleryItem01 = new ScrollMagic.Scene({
   triggerElement: "#gallery__item01",
   offset: -100,
@@ -324,6 +274,82 @@ var sceneGalleryItem06 = new ScrollMagic.Scene({
 .addTo(controller);
 
 
+//Hideto Text Animation in About Section
+var h_left = document.getElementById("h_left");
+var h_middle = document.getElementById("h_middle");
+var h_right = document.getElementById("h_right");
+var i_main = document.getElementById("i_main");
+var i_dot = document.getElementById("i_dot");
+var d = document.getElementById("d");
+var e = document.getElementById("e");
+var t_main = document.getElementById("t_main");
+var t_top = document.getElementById("t_top");
+var o = document.getElementById("o");
+hidetoText = [h_left, h_middle, h_right, i_main, i_dot, d, e, t_main, t_top, o ];
+
+
+if(isEdge || isIE){
+  var ieHidetoText = document.querySelector(".js-ie-hideto-text");
+  ieHidetoText.setAttribute("style", "display: block;");
+  var hidetoDraw = document.querySelector(".js-hideto_draw");
+  if (hidetoDraw.parentNode) {
+    hidetoDraw.parentNode.removeChild(hidetoDraw);
+  }
+}else{
+  var tweenHidetoSVG = new TimelineMax()
+    .add(TweenMax.to(
+          h_left,
+          0.3,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          h_middle,
+          0.1,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          h_right,
+          0.2,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          i_main,
+          0.2,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          d,
+          0.3,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          e,
+          0.3,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          t_main,
+          0.2,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          o,
+          0.2,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          i_dot,
+          0.1,
+          {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to(
+          t_top,
+          0.1,
+          {strokeDashoffset: 0, ease:Linear.easeNone}));
+
+  // build scene for Hideto SVG
+  var sceneHidetoSvg = new ScrollMagic.Scene({
+    triggerElement: "#hideto_draw",
+    offset: -100,
+    triggerHook: 0.65,
+    duration: 300,
+    tweenChanges: true})
+  .setTween(tweenHidetoSVG)
+  // .addIndicators({name: "hideto SVG"})
+  .addTo(controller);
+}
+
 // build tween for About
 var aboutPic = document.getElementById("about__pic__item");
 var aboutDisc = document.getElementById("about__description");
@@ -352,6 +378,7 @@ var skill01 = document.getElementById("skill01");
 var skill02 = document.getElementById("skill02");
 var skill03 = document.getElementById("skill03");
 var skill04 = document.getElementById("skill04");
+var skillJump = document.getElementsByClassName("js-skill__jump");
 var tweenAbout = new TimelineMax();
   tweenAbout.from(
               skill01,
@@ -369,6 +396,11 @@ var tweenAbout = new TimelineMax();
               '-=0.3')
             . from(
               skill04,
+              0.5,
+              {opacity: 0, y: 50, ease: Power1.easeOut},
+              '-=0.3')
+            . from(
+              skillJump,
               0.5,
               {opacity: 0, y: 50, ease: Power1.easeOut},
               '-=0.3');

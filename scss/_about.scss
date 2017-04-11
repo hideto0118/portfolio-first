@@ -79,8 +79,6 @@
   stroke-dashoffset: 14;
 }
 
-
-
 .about__pic {
   width: 50%;
   display: flex;
@@ -144,6 +142,16 @@
   &:hover {
     fill: $sub-color;
   }
+}
+
+/************
+IE and Edge
+*************/
+.js-ie-hideto-text {
+  font-family: RobotoSlab-Bold, Roboto Slab, Franklin Gothic Medium, Segoe UI Semibold, serif;
+  font-size: 7rem;
+  margin: 0;
+  display: none;
 }
 
 
