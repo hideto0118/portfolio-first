@@ -37,11 +37,10 @@ Developing this website as an original theme with starting from scratch.  I used
 * SMACSS (https://smacss.com)
 
 ## Accessibility
-## Role
+### Role
 Roles are added for Header, Main, Footer and Nav.
-## Img Alt
+### Img Alt
 Img tag's alt has descriptive texts
-## 
 
 ## Performance Optimaization
 * Images - Compressed and responsive image size with srcset.
